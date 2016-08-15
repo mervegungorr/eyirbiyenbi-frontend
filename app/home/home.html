@@ -1,20 +1,30 @@
-<h1>Eyırbiyenbi Home</h1>
-
+<div class="video-container"> <video poster="" autoplay loop playsinline muted> <source src="../app/US_60_ANTHEM.mp4" type=""> </video> <button class="btn btn-primary"> on video button </button> </div>
 <div class="listings-container">
-  <div class="listing-item"
-       ng-repeat="listing in $ctrl.listings">
 
-    <h2>{{ listing.title }}</h2>
 
-    <div class="listing-item-capacity">
-      Bed Capacity: {{ listing.bed_capacity }}
+ <div class="listing-item"
+      ng-repeat="listing in $ctrl.listings">
+
+
+   <h2>{{ listing.title }}</h2>
+
+     <div class="listing-item-capacity">
+
+     <div class="listing-item-capacity">Bed Capacity:
+  <!--{{listing.bed_capacity}}-->
+  <span  ng-repeat="bedNumber in $ctrl.getNumberOfBedCapacity(listing) track by $index"><img class="bed-icons" width="30" height="30" ng-src="../app/bed.png"></span>
+     </div>
+    Created: {{ listing.created_at | date }}
+
+ </div>
+
+   <img ng-src="{{ listing.image_url }}">
+   <div ng-controller="ctrl">
+    <div class="presentation">
+      <button-favorite></button-favorite>
+      <button-star></button-star>
+      <button-bookmark></button-bookmark>
     </div>
-
-    <div>
-      Created: {{ listing.created_at | date }}
-    </div>
-
-    <img ng-src="{{ listing.image_url }}">
-
   </div>
+</div>
 </div>
