@@ -17,8 +17,9 @@ body {
 .button5 {
     background-color: #4CAF50; /* Green */
     border-radius: 4px;
+    float:right;
     color: white;
-    padding: 16px 32px;
+    padding:  10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -42,7 +43,8 @@ body {
     background-color: #4CAF50; /* Green */
     border-radius: 4px;
     color: white;
-    padding: 16px 32px;
+    padding:  10px 25px;
+    float:right;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -67,7 +69,8 @@ body {
     background-color: #4CAF50; /* Green */
     border-radius: 4px;
     color: white;
-    padding: 16px 32px;
+    float:right;
+    padding:  10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -91,7 +94,8 @@ body {
     background-color: #4CAF50; /* Green */
     border-radius: 4px;
     color: white;
-    padding: 16px 32px;
+    float:right;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -123,14 +127,16 @@ video{
   width: 100%;
   }
 
-
-
 .listings-container {
   margin: 60%;
+
 }
 }
 
 .listing-item {
+  float: left;
+  margin-left: 50px
+
 }
 
 .listing-item-capacity {
@@ -210,4 +216,18 @@ video{
 }
 .btn-icon .glyphicon-bookmark.active:hover {
   color: rgba(166, 212, 120, 0.9);
+}
+.text-center {
+    text-align: center;
+}
+body {
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
