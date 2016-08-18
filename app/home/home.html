@@ -14,17 +14,24 @@
 
  <div class="listing-item"
       ng-repeat="listing in $ctrl.listings">
-
-
    <h2>{{ listing.title }}</h2>
 
-     <div class="listing-item-capacity">
+   <div class="listing-item-capacity">
 
      <div class="listing-item-capacity">Bed Capacity:
   <!--{{listing.bed_capacity}}-->
   <span  ng-repeat="bedNumber in $ctrl.getNumberOfBedCapacity(listing) track by $index"><img class="bed-icons" width="30" height="30" ng-src="../app/bed.png"></span>
      </div>
     Created: {{ listing.created_at | date }}
+    <div class="section-intro text-center space-6 space-top-8">
+        <h2 class="space-1">
+          <strong>Dünyayı keşfedin</strong>
+        </h2>
+        <p class="text-lead">
+          İnsanların tüm dünyada nerelere seyahat ettiğini görün.
+        </p>
+      </div>
+
 
  </div>
 
@@ -37,4 +44,7 @@
     </div>
   </div>
 </div>
+
+
+
 </div>
